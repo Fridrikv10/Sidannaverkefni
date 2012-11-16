@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9bdee28f-a76d-45e0-882e-693cacc35932" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StartingTests/TicTacToe.java" afterPath="$PROJECT_DIR$/src/StartingTests/TicTacToe.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
     </list>
     <ignored path="Sidannaverkefni.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +61,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TicTacToe.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TicTacToe.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StartingTests/TicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="10" selection-start="380" selection-end="380" vertical-scroll-proportion="0.5474061">
+            <state line="12" column="22" selection-start="257" selection-end="266" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="10" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
+            <state line="53" column="13" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.7567084">
               <folding />
             </state>
           </provider>
@@ -94,8 +94,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/StartingTests/TicTacToe.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -474,19 +474,19 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="10" selection-start="1306" selection-end="1306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StartingTests/TicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="380" selection-end="380" vertical-scroll-proportion="0.5474061">
+        <state line="12" column="22" selection-start="257" selection-end="266" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="13" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.7567084">
+          <folding />
         </state>
       </provider>
     </entry>

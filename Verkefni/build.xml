@@ -34,4 +34,23 @@
         <delete dir="${build}"/>
         <delete dir="${dist}"/>
     </target>
+
+
+
+    <path id="classpath.base">
+    </path>
+    <path id="classpath.test">
+        <pathelement location="/lib/junit.jar" />
+        <pathelement location="${tst-dir}" />
+        <path refid="classpath.base" />
+    </path>
+
+    <target name="test" depends="compile-test">
+        <junit>
+            <classpath refid="classpath.test" />
+            <formatter type="brief" usefile="false" />
+            <test name="TicTacToe" />
+        </junit>
+    </target>
+
 </project>
