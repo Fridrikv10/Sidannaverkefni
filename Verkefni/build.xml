@@ -1,63 +1,35 @@
 <project name="Sidannaverkefni" default="dist" basedir=".">
-    <description>
-        Sidannaverkefni build file
-    </description>
-    <!-- set global properties for this build -->
-    <property name="src" location="src"/>
-    <property name="build" location="build"/>
-    <property name="dist" location="dist"/>
+    <property name="testdir" location="test" />
+    <property name="srcdir" location="src" />
+    <property name="full-compile" value="true" />
 
-    <target name="init">
-        <!-- Create the time stamp -->
-        <tstamp/>
-        <!-- Create the build directory structure used by compile -->
-        <mkdir dir="${build}"/>
+    <path id="classpath.base"/>
+
+    <path id="classpath.test">
+        <pathelement location="/apache-ant-1.7.1/lib/junit-3.8.1.jar" />
+        <pathelement location="/apache-ant-1.7.1/lib/junit-3.8.jar" />
+        <pathelement location="${testdir}" />
+        <pathelement location="${srcdir}" />
+        <path refid="classpath.base" />
+    </path>
+
+    <target name="clean" >
+        <delete verbose="${full-compile}">
+            <fileset dir="${testdir}" includes="**/*.class" />
+        </delete>
     </target>
 
-    <target name="compile" depends="init"
-            description="compile the source " >
-        <!-- Compile the java code from ${src} into ${build} -->
-        <javac srcdir="${src}" destdir="${build}"/>
-    </target>
-
-    <target name="dist" depends="compile"
-            description="generate the distribution" >
-        <!-- Create the distribution directory -->
-        <mkdir dir="${dist}/lib"/>
-
-        <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
-        <jar jarfile="${dist}/lib/Sidannaverkefni-${DSTAMP}.jar" basedir="${build}"/>
-    </target>
-
-    <target name="clean" description="clean up" >
-        <!-- Delete the ${build} and ${dist} directory trees -->
-        <delete dir="${build}"/>
-        <delete dir="${dist}"/>
-    </target>
-
-
-
-    <target name="compile-test">
-        <javac srcdir="${tst-dir}"
-               verbose="${TALK}"
-                >
+    <target name="compile" depends="clean">
+        <javac srcdir="${srcdir}" destdir="${testdir}" verbose="${full-compile}" >
             <classpath refid="classpath.test"/>
         </javac>
     </target>
 
-    <path id="classpath.base">
-    </path>
-    <path id="classpath.test">
-        <pathelement location="/lib/junit-4.9-src.jar" />
-        <pathelement location="${tst-dir}" />
-        <path refid="classpath.base" />
-    </path>
-
-    <target name="test" depends="compile-test">
+    <target name="test" depends="compile">
         <junit>
             <classpath refid="classpath.test" />
             <formatter type="brief" usefile="false" />
-            <test name="TicTacToe" />
+            <test name="JUnitTestExample" />
         </junit>
     </target>
 
