@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bdee28f-a76d-45e0-882e-693cacc35932" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
     </list>
     <ignored path="Sidannaverkefni.iws" />
@@ -75,7 +74,7 @@
       <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="13" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.7567084">
+            <state line="51" column="13" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.69588554">
               <folding />
             </state>
           </provider>
@@ -485,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="13" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.7567084">
+        <state line="51" column="13" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.69588554">
           <folding />
         </state>
       </provider>

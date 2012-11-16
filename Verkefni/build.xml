@@ -37,6 +37,20 @@
 
 
 
+    <target name="compile-test">
+        <javac srcdir="${tst-dir}"
+               verbose="${TALK}"
+                >
+            <classpath refid="classpath.test"/>
+        </javac>
+    </target>
+
+    <target name="clean-compile-test">
+        <delete verbose="${TALK}">
+            <fileset dir="${tst-dir}" includes="**/*.class" />
+        </delete>
+    </target>
+
     <path id="classpath.base">
     </path>
     <path id="classpath.test">
