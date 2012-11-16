@@ -9,5 +9,14 @@ package StartingTests;
  */
 public class TicTacToe
 {
-    
+    public static void TicTacToe(String args[])
+    {
+        boolean pass = true;
+        System.out.println("Testing");
+
+        if(pass)
+        {
+            System.out.println("passed");
+        }
+    }
 }
