@@ -48,7 +48,7 @@
     <path id="classpath.base">
     </path>
     <path id="classpath.test">
-        <pathelement location="/lib/junit-4.9.jar" />
+        <pathelement location="/lib/junit-4.9-src.jar" />
         <pathelement location="${tst-dir}" />
         <path refid="classpath.base" />
     </path>
