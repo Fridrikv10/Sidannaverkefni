@@ -45,16 +45,10 @@
         </javac>
     </target>
 
-    <target name="clean-compile-test">
-        <delete verbose="${TALK}">
-            <fileset dir="${tst-dir}" includes="**/*.class" />
-        </delete>
-    </target>
-
     <path id="classpath.base">
     </path>
     <path id="classpath.test">
-        <pathelement location="/lib/junit.jar" />
+        <pathelement location="/lib/junit-4.9.jar" />
         <pathelement location="${tst-dir}" />
         <path refid="classpath.base" />
     </path>
