@@ -16,6 +16,6 @@ public class TicTacToe extends TestCase
     {
         boolean pass = true;
 
-        Assert.assertEquals(true, pass);
+        //Assert.assertEquals(true, pass);
     }
 }
